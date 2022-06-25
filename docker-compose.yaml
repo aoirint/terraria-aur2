@@ -1,0 +1,17 @@
+version: '3.9'
+services:
+  terraria:
+      image: ryshe/terraria:tshock-1.4.3.6-4.5.17-3
+      tty: true
+      stdin_open: true
+      restart: always
+      ports:
+        - '7778:7777'
+      volumes:
+        - ./data/Worlds:/root/.local/share/Terraria/Worlds
+        - ./data/logs:/tshock/logs
+        - ./data/plugins:/plugins
+      environment:
+        TZ: 'Asia/Tokyo'
+        WORLD_FILENAME: 'World.wld'
+

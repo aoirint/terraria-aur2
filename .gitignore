@@ -1,0 +1,11 @@
+/.env*
+
+*.wld*
+
+*.log
+
+*.pid
+
+# exclude tshock.sqlite (password & permission db)
+*.sqlite
+
