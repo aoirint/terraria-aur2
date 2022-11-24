@@ -1,7 +1,7 @@
 version: '3.9'
 services:
   terraria:
-      image: ryshe/terraria:tshock-1.4.3.6-4.5.18
+      image: ryshe/terraria:tshock-1.4.4.8.1-5.1.2
       tty: true
       stdin_open: true
       restart: always
